@@ -64,7 +64,7 @@ clean:
 install-mcp:
     #!/usr/bin/env bash
     echo "📦 Installing MCP server..."
-    uvx --from io-ateliertech-comfyui-mcp comfy-mcp-server --help
+    uvx --from comfyui-easy-mcp comfy-mcp-server --help
     echo ""
     echo "✅ MCP server installed!"
     echo "📝 Add .mcp.json to your Claude Code project config"

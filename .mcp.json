@@ -3,9 +3,7 @@
     "ComfyUI": {
       "command": "uvx",
       "args": [
-        "--from",
-        "io-ateliertech-comfyui-mcp",
-        "comfy-mcp-server"
+        "comfyui-easy-mcp"
       ],
       "env": {
         "COMFY_URL": "http://localhost:8188",
