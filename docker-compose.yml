@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  comfyui:
+    image: ioateliertech/comfyui-bundle:latest
+    container_name: comfyui
+    ports:
+      - "8188:8188"
+    environment:
+      - FAL_KEY=${FAL_KEY}
+    volumes:
+      # Mount project-scoped data directories
+      - ./data/input:/app/input
+      - ./data/output:/app/output
+      - ./data/models:/app/models
+      # Mount project-scoped workflows
+      - ./workflows-api:/app/workflows-api
+      - ./workflows-ui:/app/user/default/workflows
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "ComfyUI": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "io-ateliertech-comfyui-mcp",
+        "comfy-mcp-server"
+      ],
+      "env": {
+        "COMFY_URL": "http://localhost:8188",
+        "COMFY_WORKFLOWS_DIR": "${workspaceFolder}/workflows-api",
+        "COMFY_WORKFLOWS_UI_DIR": "${workspaceFolder}/workflows-ui",
+        "OUTPUT_MODE": "file",
+        "POLL_TIMEOUT": "120",
+        "POLL_INTERVAL": "1.0"
+      }
+    }
+  }
+}

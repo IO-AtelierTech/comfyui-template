@@ -1,0 +1,32 @@
+# Local environment
+.env
+
+# Data directories (user-specific)
+data/input/*
+data/output/*
+data/models/*
+
+# Keep directory structure
+!data/input/.gitkeep
+!data/output/.gitkeep
+!data/models/.gitkeep
+
+# Workflows (can be committed if you want to share)
+# Uncomment to ignore:
+# workflows-api/*
+# workflows-ui/*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
