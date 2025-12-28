@@ -3,7 +3,9 @@
     "ComfyUI": {
       "command": "uvx",
       "args": [
-        "comfyui-easy-mcp"
+        "--from",
+        "git+https://github.com/IO-AtelierTech/comfyui-mcp.git",
+        "comfy-mcp-server"
       ],
       "env": {
         "COMFY_URL": "http://localhost:8188",
